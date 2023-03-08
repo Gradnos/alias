@@ -17,16 +17,18 @@ body,html{
 }
 
 body{
+    gap: 40px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     color: var(--orange);
     background-color: var(--brown);
 }
 
 select{
-    width: 150px;
+    width: 100%;
     outline: none;
     border: none;
     color: var(--cream);
@@ -39,27 +41,33 @@ select{
 label{
     background-color: var(--cream);
     text-align: center;
-    width: 80%;
+    width: 30%;
     display: flex;
     flex-direction: column;
+
 }
 
-.main-container{
-    gap: 1rem;
+.left{
+    width: 100%;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
 }
+
 
 .selections{
+    width: 100%;
     gap: 10px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 
-button{
-    margin: 2rem 0;
-    font-size: 3rem;
+.start{
+    width: 40%;
+    font-size: 2rem;
     padding: 1rem 2rem;
     color: var(--cream);
     background-color: var(--orange);
@@ -69,12 +77,13 @@ button{
 }
 
 
-button:active{
+.start:active{
     scale: 0.95;
     background-color: var(--cyan);
 }
 
 h1{
+    width: 40%;
     margin: 0px;
     border-radius: 0.5rem;
     letter-spacing: 15px;
