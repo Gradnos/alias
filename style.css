@@ -26,6 +26,7 @@ body{
 }
 
 select{
+    width: 150px;
     outline: none;
     border: none;
     color: var(--cream);
@@ -49,6 +50,12 @@ label{
     align-items: center;
     flex-direction: column;
 }
+
+.selections{
+    gap: 10px;
+    display: flex;
+}
+
 
 button{
     margin: 2rem 0;
